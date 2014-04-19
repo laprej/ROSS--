@@ -1,4 +1,4 @@
-class tw_bitfield {
+struct tw_bitfield {
     unsigned long c0:1;
     unsigned long c1:1;
     unsigned long c2:1;
@@ -66,5 +66,6 @@ class tw_bitfield {
 };
 
 class Event {
+    unsigned long event_id;
     tw_bitfield bf;
 };
