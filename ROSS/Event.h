@@ -4,7 +4,7 @@
 #include <bitset>
 
 class Event {
-    unsigned long event_id;
+    uint64_t event_id;
     std::bitset<64> bf;
 };
 
