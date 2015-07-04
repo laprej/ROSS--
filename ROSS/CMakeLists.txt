@@ -1,4 +1,6 @@
 SET(ROSS_srcs
+Executive.cpp
+Executive.h
 Event.cpp
 Event.h
 KP.cpp
