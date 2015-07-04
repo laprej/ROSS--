@@ -4,7 +4,8 @@
 class KP;
 
 class LP {
-    KP *kp; /**< @brief The KP that "owns" this LP. */
+    /// The KP that "owns" this LP.
+    KP *kp;
 };
 
 #endif /* LP_H */

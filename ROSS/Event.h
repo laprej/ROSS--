@@ -3,9 +3,12 @@
 
 #include <bitset>
 
+#include "Timestamp.h"
+
 class Event {
-    uint64_t event_id;
-    std::bitset<64> bf;
+    Timestamp timeStamp;
+    uint64_t eventID;
+    std::bitset<64> bitField;
 };
 
 #endif /* EVENT_H */

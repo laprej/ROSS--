@@ -1,0 +1,4 @@
+#ifndef FUTURE_EVENT_LIST_H
+#define FUTURE_EVENT_LIST_H
+
+#endif /* FUTURE_EVENT_LIST_H */
