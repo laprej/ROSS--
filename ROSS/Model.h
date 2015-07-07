@@ -8,6 +8,7 @@ class LP;
 
 template<typename stateType>
 class Model {
+public:
     void mapping     (LP::ID globalID);
     void init        (stateType *st, LP *lp);
     void preRun      (stateType *st, LP *lp);
