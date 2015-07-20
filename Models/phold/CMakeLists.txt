@@ -1,3 +1,5 @@
+INCLUDE_DIRECTORIES(${ROSS--_SOURCE_DIR}/ROSS)
+
 SET(phold_srcs
 phold.cpp         phold.h)
 
