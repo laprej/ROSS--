@@ -4,7 +4,7 @@
 #include "LP.h"
 #include "Model.h"
 
-class Phold : Model<Phold> {
+class Phold : public Model<Phold> {
 public:
     void mapping     (LP::ID globalID);
     void init        (Phold *st, LP *lp);
