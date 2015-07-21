@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     Phold foo;
     Bar bar;
 
-    std::vector<Model_base*> baz;
+    std::vector<ModelBase*> baz;
 
     baz.push_back(&foo);
     baz.push_back(&bar);

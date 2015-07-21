@@ -6,12 +6,12 @@
 class Event;
 class LP;
 
-class Model_base {
+class ModelBase {
 public:
 };
 
 template<typename stateType>
-class Model : public Model_base {
+class Model : public ModelBase {
 public:
     void mapping     (LP::ID globalID);
     void init        (stateType *st, LP *lp);
