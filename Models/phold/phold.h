@@ -6,12 +6,7 @@
 
 class Phold : public Model<Phold> {
 public:
-    void mapping     (LP::ID globalID);
     void init        (Phold *st, LP *lp);
-    void preRun      (Phold *st, LP *lp);
-    void final       (Phold *st, LP *lp);
-    void event       (Phold *st, LP *lp, Event *e);
-    void reverseEvent(Phold *st, LP *lp, Event *e);
 };
 
 #endif /* PHOLD_H */
