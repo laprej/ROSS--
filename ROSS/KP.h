@@ -11,6 +11,11 @@ class KP {
     std::vector<LP *> lpVector;
     /// The PE that "owns" this KP.
     PE *pe;
+
+public:
+    KP(unsigned numLPs = 16);
+    PE * PE() const;
+    void setPE(class PE *p);
 };
 
 #endif /* KP_H */
