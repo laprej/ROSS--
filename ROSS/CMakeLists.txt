@@ -17,4 +17,6 @@ Timestamp.cpp
 Timestamp.h
 )
 
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti")
+
 ADD_LIBRARY(ROSS ${ROSS_srcs})
