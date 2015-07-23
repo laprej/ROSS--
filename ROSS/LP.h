@@ -11,15 +11,23 @@ class KP;
 struct Event;
 
 class LP {
-    /// The KP that "owns" this LP.
-    KP *kp;
-    Timestamp curTime;
-
 public:
     typedef uint64_t ID;
 
+    /// Return the global identifier for this LP
+    ID GID() const { return globalID; }
+    /// Send a (pre-populated) event
     void sendEvent(Event *e);
+    /// Get the current time for this LP
     Timestamp CurrentTime() const;
+
+private:
+    /// The KP that "owns" this LP.
+    KP *kp;
+    /// Timestamp of the
+    Timestamp curTime;
+    /// Global identifier
+    ID globalID;
 };
 
 }
