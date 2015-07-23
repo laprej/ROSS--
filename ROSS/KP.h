@@ -2,6 +2,7 @@
 #define KP_H
 
 #include <vector>
+#include "globals.h"
 
 class PE;
 class LP;

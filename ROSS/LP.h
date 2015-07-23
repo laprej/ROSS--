@@ -2,6 +2,7 @@
 #define LP_H
 
 #include <cstdint>
+#include "globals.h"
 
 class KP;
 class Event;
