@@ -6,7 +6,7 @@
 
 namespace ROSS {
 
-class Event;
+struct Event;
 class LP;
 
 class ModelBase {

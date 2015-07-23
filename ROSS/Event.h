@@ -8,7 +8,6 @@
 namespace ROSS {
 
 class LP;
-
 struct Event {
     Timestamp timeStamp;
     uint64_t eventID;

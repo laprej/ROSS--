@@ -8,7 +8,7 @@ namespace ROSS {
 
 class PE;
 class LP;
-class Event;
+struct Event;
 
 class KP {
     /// The LPs associated with this particular KP
