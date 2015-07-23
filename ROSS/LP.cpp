@@ -2,9 +2,11 @@
 
 #include <cassert>
 
+using namespace ROSS;
+
 void
 LP::sendEvent(Event *e)
 {
-    if (ROSS::gSyncProtocol == ROSS::CONSERVATIVE) {
+    if (gSyncProtocol == CONSERVATIVE) {
     }
 }

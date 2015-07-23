@@ -1,4 +1,4 @@
-#ifndef EXECUTIVE_H
-#define EXECUTIVE_H
+#ifndef ROSSMM_EXECUTIVE_H
+#define ROSSMM_EXECUTIVE_H
 
-#endif /* EXECUTIVE_H */
+#endif /* ROSSMM_EXECUTIVE_H */

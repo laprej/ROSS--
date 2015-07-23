@@ -1,9 +1,11 @@
-#ifndef EVENT_H
-#define EVENT_H
+#ifndef ROSSMM_EVENT_H
+#define ROSSMM_EVENT_H
 
 #include <bitset>
 #include "globals.h"
 #include "Timestamp.h"
+
+namespace ROSS {
 
 class LP;
 
@@ -15,4 +17,6 @@ struct Event {
     LP *dstLP;
 };
 
-#endif /* EVENT_H */
+}
+
+#endif /* ROSSMM_EVENT_H */

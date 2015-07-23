@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 
+using namespace ROSS;
+
 void Phold::init        (Phold *st, LP *lp)
 {
     std::cout << "Hello, world!\n";

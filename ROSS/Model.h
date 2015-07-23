@@ -1,8 +1,10 @@
-#ifndef MODEL_H
-#define MODEL_H
+#ifndef ROSSMM_MODEL_H
+#define ROSSMM_MODEL_H
 
 #include "globals.h"
 #include "LP.h"
+
+namespace ROSS {
 
 class Event;
 class LP;
@@ -22,4 +24,6 @@ public:
     void reverseEvent(stateType *st, LP *lp, Event *e) { }
 };
 
-#endif /* MODEL_H */
+}
+
+#endif /* ROSSMM_MODEL_H */

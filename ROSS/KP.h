@@ -1,8 +1,10 @@
-#ifndef KP_H
-#define KP_H
+#ifndef ROSSMM_KP_H
+#define ROSSMM_KP_H
 
 #include <vector>
 #include "globals.h"
+
+namespace ROSS {
 
 class PE;
 class LP;
@@ -22,4 +24,6 @@ public:
     void setPE(class PE *p);
 };
 
-#endif /* KP_H */
+}
+
+#endif /* ROSSMM_KP_H */

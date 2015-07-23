@@ -1,8 +1,10 @@
-#ifndef LP_H
-#define LP_H
+#ifndef ROSSMM_LP_H
+#define ROSSMM_LP_H
 
 #include <cstdint>
 #include "globals.h"
+
+namespace ROSS {
 
 class KP;
 class Event;
@@ -17,4 +19,6 @@ public:
     void sendEvent(Event *e);
 };
 
-#endif /* LP_H */
+}
+
+#endif /* ROSSMM_LP_H */
