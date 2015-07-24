@@ -20,10 +20,11 @@ public:
     void sendEvent(Event *e);
     /// Get the current time for this LP
     Timestamp CurrentTime() const;
+    KP *KP() const { return kp; }
 
 private:
     /// The KP that "owns" this LP.
-    KP *kp;
+    class KP *kp;
     /// Timestamp of the
     Timestamp curTime;
     /// Global identifier

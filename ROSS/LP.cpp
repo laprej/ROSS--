@@ -1,4 +1,6 @@
 #include "LP.h"
+#include "KP.h"
+#include "PE.h"
 #include "Event.h"
 
 #include <cassert>
@@ -9,6 +11,7 @@ void
 LP::sendEvent(Event *e)
 {
     LP *sendingLP = e->srcLP;
+    PE *curPE     = sendingLP->KP()->PE();
 
     if (gSyncProtocol == CONSERVATIVE) {
         // Check for LOOKAHEAD violations
@@ -16,6 +19,8 @@ LP::sendEvent(Event *e)
             abort();
         }
     }
+
+    e->causedBy(curPE->currentEvent());
 }
 
 Timestamp

@@ -15,11 +15,12 @@ struct Event {
     LP *srcLP;
     LP *dstLP;
 
+    void causedBy(Event *e);
+
+private:
     /// Causality
     Event *causedByMe = 0;
     Event *causeNext  = 0;
-
-    void causedBy(Event *e);
 };
 
 }

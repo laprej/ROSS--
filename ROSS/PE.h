@@ -7,9 +7,14 @@
 namespace ROSS {
 
 class KP;
+struct Event;
 
 class PE {
     std::vector<KP *> kpVector;
+    Event *curEvent;
+
+public:
+    Event *currentEvent() const { return curEvent; }
 };
 
 }
