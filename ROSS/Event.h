@@ -14,6 +14,12 @@ struct Event {
     std::bitset<64> bitField;
     LP *srcLP;
     LP *dstLP;
+
+    /// Causality
+    Event *causedByMe = 0;
+    Event *causeNext  = 0;
+
+    void causedBy(Event *e);
 };
 
 }

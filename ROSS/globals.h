@@ -1,6 +1,8 @@
 #ifndef ROSSMM_GLOBALS_H
 #define ROSSMM_GLOBALS_H
 
+#include "Timestamp.h"
+
 namespace ROSS {
 
 enum Sync {
@@ -11,6 +13,7 @@ enum Sync {
 };
 
 extern Sync gSyncProtocol;
+extern Timestamp gLookahead;
 
 }
 
