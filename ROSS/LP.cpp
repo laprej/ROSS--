@@ -21,6 +21,10 @@ LP::sendEvent(Event *e)
     }
 
     e->causedBy(curPE->currentEvent());
+
+    // Should we pull the mapping function out of the model and make a
+    // global function instead?  All LPs must map somewhere and it may
+    // make more sense to do it that way vs. model-specific mapping
 }
 
 Timestamp
