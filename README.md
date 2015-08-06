@@ -6,7 +6,9 @@ These may include:
 * containers
 * the STL
 * inheritance
-* boost
+* Boost
 * anything else I may have missed
 
 By taking advantage of the above, ideas can be developed and tested more quickly and in a reasonably performant manner.
+
+The [Boost](http://www.boost.org) C++ libraries provide a splay tree as well as intrusive containers (which differ from STL containers which store *copies* of the data).
