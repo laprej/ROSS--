@@ -4,5 +4,6 @@ SET(phold_srcs
 phold.cpp         phold.h)
 
 ADD_EXECUTABLE(phold ${phold_srcs})
+SET_PROPERTY(TARGET phold PROPERTY CXX_STANDARD 11)
 
 TARGET_LINK_LIBRARIES(phold ROSS m)
