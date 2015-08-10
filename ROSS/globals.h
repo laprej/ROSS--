@@ -5,7 +5,7 @@
 
 namespace ROSS {
 
-enum Sync {
+enum class Sync {
     SEQUENTIAL,
     CONSERVATIVE,
     OPTIMISTIC,

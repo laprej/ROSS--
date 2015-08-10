@@ -13,7 +13,7 @@ LP::sendEvent(Event *e)
     LP *sendingLP = e->srcLP;
     PE *curPE     = sendingLP->KP()->PE();
 
-    if (gSyncProtocol == CONSERVATIVE) {
+    if (gSyncProtocol == Sync::CONSERVATIVE) {
         // Check for LOOKAHEAD violations
         if (e->timeStamp - sendingLP->CurrentTime() < gLookahead) {
             abort();
