@@ -15,6 +15,7 @@ PE.cpp
 PE.h
 Timestamp.cpp
 Timestamp.h
+globals.cpp
 globals.h
 )
 
