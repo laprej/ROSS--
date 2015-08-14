@@ -13,8 +13,7 @@ namespace ROSS {
 
 class LP;
 
-/// We inherit from bs_set_base_hook to get hooks to support splay operations
-struct Event : public intrusive::bs_set_base_hook<> {
+struct Event {
     Timestamp timeStamp;
     uint64_t eventID;
     std::bitset<64> bitField;
@@ -22,6 +21,9 @@ struct Event : public intrusive::bs_set_base_hook<> {
     LP *dstLP;
 
     void causedBy(Event *e);
+
+    /// We need this for our splay tree
+    intrusive::bs_set_member_hook<> splayHook;
 
 private:
     /// Causality
