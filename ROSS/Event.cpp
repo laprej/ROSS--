@@ -6,6 +6,7 @@ using namespace ROSS;
 void
 Event::causedBy(Event *e)
 {
+    assert(this != e && "Error: Event causality loop!");
     this->causeNext = e->causedByMe;
     e->causedByMe = this;
 }
