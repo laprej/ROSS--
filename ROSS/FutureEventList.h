@@ -12,8 +12,9 @@ namespace ROSS {
 /// This class will hold our future event list (FEL).
 /// Mostly this will simply be a wrapper for whatever type of event management
 /// we're using or experimenting on.
-using MemberOption = boost::intrusive::member_hook<Event, boost::intrusive::bs_set_member_hook<>, &Event::felHook>;
-using FutureEventList = boost::intrusive::splaytree< Event, MemberOption>;
+using MemberOption = intrusive::member_hook<Event,
+    intrusive::bs_set_member_hook<>, &Event::felHook>;
+using FutureEventList = intrusive::splaytree<Event, MemberOption>;
 
 }
 
