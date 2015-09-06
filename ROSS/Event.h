@@ -13,8 +13,9 @@ namespace ROSS {
 
 class LP;
 
-/// We inherit from bs_set_base_hook to get hooks to support splay operations
-struct Event : public intrusive::bs_set_base_hook<> {
+struct Event {
+    /// This is the FEL hook.  See FutureEventList.h.
+    intrusive::bs_set_member_hook<> felHook;
     Timestamp timeStamp;
     uint64_t eventID;
     std::bitset<64> bitField;

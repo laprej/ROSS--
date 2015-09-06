@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "globals.h"
+#include "FutureEventList.h"
 
 namespace ROSS {
 
@@ -12,6 +13,7 @@ struct Event;
 class PE {
     std::vector<KP *> kpVector;
     Event *curEvent;
+    FutureEventList FEL;
 
 public:
     Event *currentEvent() const { return curEvent; }
