@@ -16,7 +16,6 @@ public:
 template<typename stateType>
 class Model : public ModelBase {
 public:
-    int  mapping     (LP::ID globalID) { }
     void init        (stateType *st, LP *lp) { }
     void preRun      (stateType *st, LP *lp) { }
     void final       (stateType *st, LP *lp) { }
