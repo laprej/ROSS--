@@ -25,6 +25,9 @@ LP::sendEvent(Event *e)
     // Should we pull the mapping function out of the model and make a
     // global function instead?  All LPs must map somewhere and it may
     // make more sense to do it that way vs. model-specific mapping
+
+    // call LP remote mapping function to get dest_pe
+    int destPEID = mapping(e->dstLP->GID());
 }
 
 Timestamp
