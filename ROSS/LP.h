@@ -23,7 +23,7 @@ public:
     KP *KP() const { return kp; }
 
     /// This is a USER-DEFINED method
-    static int mapping(LP::ID globalID);
+    static uint32_t mapping(LP::ID globalID);
 
 private:
     /// The KP that "owns" this LP.

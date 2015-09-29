@@ -27,7 +27,14 @@ LP::sendEvent(Event *e)
     // make more sense to do it that way vs. model-specific mapping
 
     // call LP remote mapping function to get dest_pe
-    int destPEID = mapping(e->dstLP->GID());
+    uint32_t destPEID = mapping(e->dstLP->GID());
+
+    if (destPEID == curPE->PEID()) {
+        // If destination PE is the current PE, i.e., a send to ourself
+    }
+    else {
+        // Send it over the network for proper handling
+    }
 }
 
 Timestamp

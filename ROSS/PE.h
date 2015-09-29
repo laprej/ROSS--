@@ -11,12 +11,14 @@ class KP;
 struct Event;
 
 class PE {
+    uint32_t peID;
     std::vector<KP *> kpVector;
     Event *curEvent;
     FutureEventList FEL;
 
 public:
     Event *currentEvent() const { return curEvent; }
+    uint32_t PEID() const { return peID; }
 };
 
 }

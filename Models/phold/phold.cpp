@@ -18,7 +18,7 @@ class Bar : public Model<Bar> {
     }
 };
 
-int LP::mapping(LP::ID globalID)
+uint32_t LP::mapping(LP::ID globalID)
 {
     return 0;
 }
