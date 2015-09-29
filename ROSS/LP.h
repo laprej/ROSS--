@@ -21,6 +21,7 @@ public:
     /// Get the current time for this LP
     Timestamp CurrentTime() const;
     KP *KP() const { return kp; }
+
     /// This is a USER-DEFINED method
     static int mapping(LP::ID globalID);
 
