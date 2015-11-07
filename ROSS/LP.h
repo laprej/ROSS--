@@ -22,7 +22,9 @@ public:
     Timestamp CurrentTime() const;
     KP *KP() const { return kp; }
 
-    /// This is a USER-DEFINED method
+    /// This is a USER-DEFINED method.  This method should return the PE that
+    /// contains globalID.  This mapping should never change once established
+    /// i.e. it is acceptable (and encouraged) to cache the returned value.
     static uint32_t mapping(LP::ID globalID);
 
 private:
